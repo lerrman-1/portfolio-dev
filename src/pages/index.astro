@@ -1,8 +1,25 @@
 ---
+import srcImage from "../assets/1.jpg";
 import Layout from "../layouts/BaseLayout.astro";
 ---
 
 <Layout title="Home" description="This is the homepage">
-  <h1>Welcome to my website!</h1>
-  <p>This is the main content of the homepage.</p>
+  <div class="flex flex-col md:flex-row items-center justify-center p-7 gap-8">
+    <!-- <h1 class="text-3xl">Welcome to my website!</h1> -->
+    <img src={srcImage.src} alt="foto-1" class="w-3xl" />
+    <p
+      class="max-w-lg break-words text-justify transition-all duration-500 text-slate-700"
+    >
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nam ex
+      sint optio quaerat et obcaecati enim tempora esse maiores mollitia
+      voluptates alias dolorem doloremque delectus, fugit tempore illo! Numquam
+      magnam assumenda odit dignissimos non aperiam fugiat cumque earum
+      necessitatibus dolores architecto iusto magni, veniam accusantium facere,
+      at alias consectetur quas molestiae quaerat exercitationem. Fugiat optio
+      ea unde saepe maiores ipsa quidem eius? Velit perferendis eius maiores
+      molestiae rem? Eveniet neque quibusdam dolor ad, laudantium aperiam,
+      impedit sed nobis delectus suscipit quas et rerum atque. Laudantium quidem
+      voluptatum consectetur.
+    </p>
+  </div>
 </Layout>
